@@ -2,12 +2,6 @@
 
 VS Code snippets for authoring GitHub Actions workflow files.
 
-## ✅ Getting Started
-
-1. Install the extension
-1. Open the command palette (Ctrl+Shift+P), type "GitHub Actions Snippets", select a snippet, press enter.
-![Insert Snippet](./images/insertSnippet.png)
-
 ## 💡 Features
 
 Includes snippets to peform the following:
