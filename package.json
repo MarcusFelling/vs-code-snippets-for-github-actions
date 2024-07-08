@@ -3,12 +3,18 @@
   "displayName": "VS Code Snippets for GitHub Actions",
   "description": "VS Code snippets for authoring GitHub Actions workflow files.",
   "version": "0.0.1",
+  "publisher": "MFelling",
+  "icon": "icon.png",  
   "engines": {
     "vscode": "^1.91.0"
   },
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusFelling/vs-code-snippets-for-github-actions.git"
+  },  
   "contributes": {
     "snippets": [
       {
