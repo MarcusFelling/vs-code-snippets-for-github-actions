@@ -4,6 +4,6 @@ All notable changes to the "vs-code-snippets-for-github-actions" extension will 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.2]
 
 - Initial release
