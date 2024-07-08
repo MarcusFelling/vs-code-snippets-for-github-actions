@@ -1,0 +1,20 @@
+{
+  "name": "vs-code-snippets-for-github-actions",
+  "displayName": "VS Code Snippets for GitHub Actions",
+  "description": "VS Code snippets for authoring GitHub Actions workflow files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/github-actions.code-snippets.json"
+      }
+    ]
+  }
+}

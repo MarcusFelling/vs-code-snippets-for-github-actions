@@ -1,0 +1,51 @@
+
+{
+    "Insert Secret": {
+        "prefix": "gha-secret",
+        "body": "${{ secrets.${1:secret_name} }}",
+        "description": "Insert a GitHub Actions secret"
+    },
+    "Insert Environment Variable": {
+        "prefix": "gha-envVar",
+        "body": "${{ env.${1:environment_variable_name} }}",
+        "description": "Insert a GitHub Actions environment variable"
+    },
+    "Insert Variable": {
+        "prefix": "gha-var",
+        "body": "${{ var.${1:variable_name} }}",
+        "description": "Insert a GitHub Actions variable"
+    },
+    "Insert Job": {
+        "prefix": "gha-job",
+        "body": [
+            "jobs:",
+            "  ${1:job_name}:",
+            "    runs-on: ubuntu-latest",
+            "    steps:",
+            "      - name: checkout code",
+            "        uses: actions/checkout@v4"
+        ],
+        "description": "Insert a GitHub Actions job"
+    },
+    "Dump GitHub Context": {
+        "prefix": "gha-dumpContext",
+        "body": [
+            "- name: Dump GitHub context",
+            "  env:",
+            "    GITHUB_CONTEXT: ${{ toJSON(github) }}",
+            "  run: echo \"\\$GITHUB_CONTEXT\""
+        ],
+        "description": "Dump the GitHub context"
+    },
+    "Reference Reusable Workflow": {
+        "prefix": "gha-refReusableWorkflow",
+        "body": [
+            "jobs:",
+            "  ${1:JOBNAME}:",
+            "    uses: ./.github/workflows/${2:REUSABLEWORKFLOWNAME}.yml",
+            "    with:",
+            "      ${3:INPUTNAME}: ${4:INPUTVALUE}"
+        ],
+        "description": "Reference a reusable workflow"
+    }
+}
