@@ -2,24 +2,35 @@
   "name": "vs-code-snippets-for-github-actions",
   "displayName": "VS Code Snippets for GitHub Actions",
   "description": "VS Code snippets for authoring GitHub Actions workflow files.",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "publisher": "MFelling",
   "icon": "icon.png",  
   "engines": {
     "vscode": "^1.91.0"
   },
+  "scripts": {
+    "package": "npx vsce package",
+    "publish": "npx vsce publish"
+  },  
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Other"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarcusFelling/vs-code-snippets-for-github-actions.git"
   },  
+  "activationEvents": [
+    "onLanguage:yaml"
+  ],
+  "keywords": [
+    "GitHub Actions"
+  ],  
   "contributes": {
     "snippets": [
       {
-        "language": "javascript",
-        "path": "./snippets/github-actions.code-snippets.json"
+        "language": "yaml",
+        "path": "./snippets/github-actions.code-snippets"
       }
     ]
   }

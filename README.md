@@ -19,7 +19,7 @@ Includes snippets to peform the following:
 
 ## 🚚 Release Notes
 
-### 0.0.2
+### 0.0.4
 
 Initial release
 
