@@ -28,6 +28,4 @@ jobs:
           VS_MARKETPLACE_TOKEN: ${{ secrets.VS_MARKETPLACE_TOKEN }}        
         with:
           pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
-          vsix: ./*.vsix
-          publisher: MFelling
           registryUrl: https://marketplace.visualstudio.com
