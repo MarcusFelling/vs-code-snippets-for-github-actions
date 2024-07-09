@@ -19,10 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarcusFelling/vs-code-snippets-for-github-actions.git"
-  },  
-  "activationEvents": [
-    "onLanguage:yaml"
-  ],
+  },
   "keywords": [
     "GitHub Actions"
   ],  
